@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6039FAB4593AE03D2EF09BB /* Pods_SushiFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F9B524AFDC6171523C4822 /* Pods_SushiFood.framework */; };
 		C6B73D7127B90B9F003FE7F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D7027B90B9F003FE7F6 /* AppDelegate.swift */; };
 		C6B73D7327B90B9F003FE7F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D7227B90B9F003FE7F6 /* SceneDelegate.swift */; };
 		C6B73D7527B90B9F003FE7F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D7427B90B9F003FE7F6 /* ViewController.swift */; };
 		C6B73D7827B90B9F003FE7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B73D7627B90B9F003FE7F6 /* Main.storyboard */; };
 		C6B73D7A27B90BA1003FE7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B73D7927B90BA1003FE7F6 /* Assets.xcassets */; };
 		C6B73D7D27B90BA1003FE7F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B73D7B27B90BA1003FE7F6 /* LaunchScreen.storyboard */; };
+		C6B73D8527BA4084003FE7F6 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D8427BA4084003FE7F6 /* GalleryCollectionView.swift */; };
+		C6B73D8727BA4169003FE7F6 /* SushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D8627BA4169003FE7F6 /* SushiModel.swift */; };
+		C6B73D8927BA4320003FE7F6 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B73D8827BA4320003FE7F6 /* GalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17F9B524AFDC6171523C4822 /* Pods_SushiFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SushiFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341816373482E2089110F155 /* Pods-SushiFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiFood.release.xcconfig"; path = "Target Support Files/Pods-SushiFood/Pods-SushiFood.release.xcconfig"; sourceTree = "<group>"; };
+		70B1B5B62DFD42A5AA618AB3 /* Pods-SushiFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SushiFood.debug.xcconfig"; path = "Target Support Files/Pods-SushiFood/Pods-SushiFood.debug.xcconfig"; sourceTree = "<group>"; };
 		C6B73D6D27B90B9F003FE7F6 /* SushiFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B73D7027B90B9F003FE7F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B73D7227B90B9F003FE7F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		C6B73D7927B90BA1003FE7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B73D7C27B90BA1003FE7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6B73D7E27B90BA1003FE7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B73D8427BA4084003FE7F6 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		C6B73D8627BA4169003FE7F6 /* SushiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiModel.swift; sourceTree = "<group>"; };
+		C6B73D8827BA4320003FE7F6 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6039FAB4593AE03D2EF09BB /* Pods_SushiFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4B8600ABC5186F3FD78E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70B1B5B62DFD42A5AA618AB3 /* Pods-SushiFood.debug.xcconfig */,
+				341816373482E2089110F155 /* Pods-SushiFood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6B73D6427B90B9F003FE7F6 = {
 			isa = PBXGroup;
 			children = (
 				C6B73D6F27B90B9F003FE7F6 /* SushiFood */,
 				C6B73D6E27B90B9F003FE7F6 /* Products */,
+				1B4B8600ABC5186F3FD78E02 /* Pods */,
+				D71100E5C8A3ADF1F7A1E079 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +81,23 @@
 				C6B73D7027B90B9F003FE7F6 /* AppDelegate.swift */,
 				C6B73D7227B90B9F003FE7F6 /* SceneDelegate.swift */,
 				C6B73D7427B90B9F003FE7F6 /* ViewController.swift */,
+				C6B73D8427BA4084003FE7F6 /* GalleryCollectionView.swift */,
+				C6B73D8827BA4320003FE7F6 /* GalleryCollectionViewCell.swift */,
+				C6B73D8627BA4169003FE7F6 /* SushiModel.swift */,
 				C6B73D7627B90B9F003FE7F6 /* Main.storyboard */,
 				C6B73D7927B90BA1003FE7F6 /* Assets.xcassets */,
 				C6B73D7B27B90BA1003FE7F6 /* LaunchScreen.storyboard */,
 				C6B73D7E27B90BA1003FE7F6 /* Info.plist */,
 			);
 			path = SushiFood;
+			sourceTree = "<group>";
+		};
+		D71100E5C8A3ADF1F7A1E079 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17F9B524AFDC6171523C4822 /* Pods_SushiFood.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B73D8127B90BA1003FE7F6 /* Build configuration list for PBXNativeTarget "SushiFood" */;
 			buildPhases = (
+				C3099E7A700CF946BBC8B266 /* [CP] Check Pods Manifest.lock */,
 				C6B73D6927B90B9F003FE7F6 /* Sources */,
 				C6B73D6A27B90B9F003FE7F6 /* Frameworks */,
 				C6B73D6B27B90B9F003FE7F6 /* Resources */,
+				34FFB75369DED2C3F1FD75A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34FFB75369DED2C3F1FD75A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SushiFood/Pods-SushiFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SushiFood/Pods-SushiFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SushiFood/Pods-SushiFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3099E7A700CF946BBC8B266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SushiFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6B73D6927B90B9F003FE7F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C6B73D7527B90B9F003FE7F6 /* ViewController.swift in Sources */,
+				C6B73D8927BA4320003FE7F6 /* GalleryCollectionViewCell.swift in Sources */,
+				C6B73D8527BA4084003FE7F6 /* GalleryCollectionView.swift in Sources */,
+				C6B73D8727BA4169003FE7F6 /* SushiModel.swift in Sources */,
 				C6B73D7127B90B9F003FE7F6 /* AppDelegate.swift in Sources */,
 				C6B73D7327B90B9F003FE7F6 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +364,7 @@
 		};
 		C6B73D8227B90BA1003FE7F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B1B5B62DFD42A5AA618AB3 /* Pods-SushiFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +393,7 @@
 		};
 		C6B73D8327B90BA1003FE7F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341816373482E2089110F155 /* Pods-SushiFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
