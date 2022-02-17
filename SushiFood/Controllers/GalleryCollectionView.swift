@@ -17,9 +17,11 @@ class GalleryCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
         super.init(frame: .zero, collectionViewLayout: layout)
         
         backgroundColor = .white
+        
         delegate = self
         dataSource = self
         register(GalleryCollectionViewCell.self, forCellWithReuseIdentifier: GalleryCollectionViewCell.reuseId)
+        
         layout.minimumLineSpacing = Constance.galleryMinimumLineSpacing
         contentInset = UIEdgeInsets(top: 0, left: Constance.leftDistanceToView, bottom: 0, right: Constance.rightDistanceToView)
         showsHorizontalScrollIndicator = false

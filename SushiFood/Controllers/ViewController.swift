@@ -8,6 +8,10 @@
 import UIKit
 import SnapKit
 
+protocol ViewControllerDelegate {
+    func toggleMenu()
+}
+
 class ViewController: UIViewController {
     
     private var menuButton = UIButton()
@@ -16,6 +20,7 @@ class ViewController: UIViewController {
     private var secondLabel = UILabel()
     
     private var galleryCollectionView = GalleryCollectionView()
+    var delegate: ViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,7 @@ class ViewController: UIViewController {
         setupButtons()
         setupLabels()
         setupGalleryCollectionView()
+        menuButtons()
     }
     
     private func setupButtons() {
@@ -79,6 +85,14 @@ class ViewController: UIViewController {
         galleryCollectionView.heightAnchor.constraint(equalToConstant: 350).isActive = true
         
         galleryCollectionView.set(cells: SushiModel.fetchSushi())
+    }
+    
+    private func menuButtons() {
+        menuButton.addTarget(self, action: #selector(actionButton), for: .touchUpInside)
+    }
+    
+    @objc func actionButton() {
+        delegate?.toggleMenu()
     }
 }
 
